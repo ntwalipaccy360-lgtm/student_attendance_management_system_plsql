@@ -1,5 +1,5 @@
 -- =========================================
--- Group Member: Member 4 (PL/SQL Developer)
+-- Group Member: Iradukunda Denyse (PL/SQL Developer)
 -- Task: Attendance Percentage Function
 -- =========================================
 CREATE OR REPLACE FUNCTION GetAttendancePercentage (
