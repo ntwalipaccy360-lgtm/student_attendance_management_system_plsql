@@ -1,0 +1,38 @@
+-- =========================================
+-- Group Member: Member 2 (Table Developer)
+-- Task: Create all database tables
+-- Project: Student Attendance System
+-- =========================================
+CREATE TABLE Students (
+    StudentID NUMBER PRIMARY KEY,
+    FirstName VARCHAR2(50),
+    LastName VARCHAR2(50),
+    Gender VARCHAR2(10),
+    Department VARCHAR2(50)
+);
+CREATE TABLE Courses (
+    CourseID NUMBER PRIMARY KEY,
+    CourseName VARCHAR2(100),
+    Credits NUMBER
+);
+CREATE TABLE Lecturers (
+    LecturerID NUMBER PRIMARY KEY,
+    LecturerName VARCHAR2(100),
+    Email VARCHAR2(100)
+);
+CREATE TABLE Attendance (
+    AttendanceID NUMBER PRIMARY KEY,
+    StudentID NUMBER,
+    CourseID NUMBER,
+    AttendanceDate DATE,
+    Status VARCHAR2(10),
+    FOREIGN KEY (StudentID) REFERENCES Students(StudentID),
+    FOREIGN KEY (CourseID) REFERENCES Courses(CourseID)
+);
+CREATE TABLE Course_Assignment (
+    AssignmentID NUMBER PRIMARY KEY,
+    LecturerID NUMBER,
+    CourseID NUMBER,
+    FOREIGN KEY (LecturerID) REFERENCES Lecturers(LecturerID),
+    FOREIGN KEY (CourseID) REFERENCES Courses(CourseID)
+);

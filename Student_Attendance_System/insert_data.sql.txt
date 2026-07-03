@@ -1,0 +1,22 @@
+-- =========================================
+-- Group Member: Member 3 (Data Handler)
+-- Task: Insert sample data into tables
+-- =========================================
+INSERT INTO Students VALUES (1, 'Jean', 'Claude', 'Male', 'Computer Science');
+INSERT INTO Students VALUES (2, 'Aline', 'Uwase', 'Female', 'Information Systems');
+INSERT INTO Students VALUES (3, 'Eric', 'Hakizimana', 'Male', 'Software Engineering');
+INSERT INTO Students VALUES (4, 'Grace', 'Mukamana', 'Female', 'Computer Science');
+INSERT INTO Courses VALUES (101, 'Database Programming', 4);
+INSERT INTO Courses VALUES (102, 'Web Development', 3);
+INSERT INTO Courses VALUES (103, 'Networking', 3);
+INSERT INTO Lecturers VALUES (201, 'Dr. Eric Maniraguha', 'eric@university.rw');
+INSERT INTO Lecturers VALUES (202, 'Dr. Jean Bosco', 'bosco@university.rw');
+INSERT INTO Course_Assignment VALUES (301, 201, 101);
+INSERT INTO Course_Assignment VALUES (302, 202, 102);
+INSERT INTO Attendance VALUES (401, 1, 101, TO_DATE('2026-07-01','YYYY-MM-DD'), 'Present');
+INSERT INTO Attendance VALUES (402, 2, 101, TO_DATE('2026-07-01','YYYY-MM-DD'), 'Absent');
+INSERT INTO Attendance VALUES (403, 3, 101, TO_DATE('2026-07-01','YYYY-MM-DD'), 'Present');
+INSERT INTO Attendance VALUES (404, 4, 101, TO_DATE('2026-07-01','YYYY-MM-DD'), 'Present');
+
+INSERT INTO Attendance VALUES (405, 1, 101, TO_DATE('2026-07-02','YYYY-MM-DD'), 'Present');
+INSERT INTO Attendance VALUES (406, 2, 101, TO_DATE('2026-07-02','YYYY-MM-DD'), 'Present');

@@ -1,0 +1,39 @@
+-- =========================================
+-- Group Member: Member 4 (PL/SQL Developer)
+-- Task: Attendance Percentage Function
+-- =========================================
+CREATE OR REPLACE FUNCTION GetAttendancePercentage (
+    p_StudentID NUMBER
+)
+RETURN NUMBER
+IS
+    v_total NUMBER := 0;
+    v_present NUMBER := 0;
+    v_percentage NUMBER := 0;
+BEGIN
+
+    -- total attendance records
+    SELECT COUNT(*)
+    INTO v_total
+    FROM Attendance
+    WHERE StudentID = p_StudentID;
+
+    -- total present days
+    SELECT COUNT(*)
+    INTO v_present
+    FROM Attendance
+    WHERE StudentID = p_StudentID
+    AND Status = 'Present';
+
+    -- avoid division by zero
+    IF v_total = 0 THEN
+        RETURN 0;
+    END IF;
+
+    -- calculate percentage
+    v_percentage := (v_present / v_total) * 100;
+
+    RETURN v_percentage;
+
+END;
+/
