@@ -1,4 +1,4 @@
-# Group work :  (Documentation Lead)
+# Group Member  : Ntwali Pacifique  (Documentation Lead)
 Task: Project documentation and problem statement
 # 📘 Student Attendance Management System (PL/SQL Project)
 
