@@ -1,5 +1,5 @@
 -- =========================================
--- Group Member: Member 2 (Table Developer)
+-- Group Member: Rudasingwa Felix (Table Developer)
 -- Task: Create all database tables
 -- Project: Student Attendance System
 -- =========================================
