@@ -1,5 +1,5 @@
 -- =========================================
--- Group Member: Member 4 (PL/SQL Developer)
+-- Group Member: Ntwali Pacifique (PL/SQL Developer)
 -- Task: Stored Procedure for Attendance
 -- =========================================
 CREATE OR REPLACE PROCEDURE MarkAttendance (
