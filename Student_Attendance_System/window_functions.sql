@@ -1,5 +1,5 @@
 -- =========================================
--- Group Member: Member 5 (SQL Analyst)
+-- Group Member: Ntwali Pacifique (SQL Analyst)
 -- Task: Rank students using Window Functions
 -- =========================================
 SELECT 
