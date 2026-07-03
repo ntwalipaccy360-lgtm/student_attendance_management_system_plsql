@@ -1,5 +1,5 @@
 -- =========================================
--- Group Member: Member 3 (Data Handler)
+-- Group Member: Uwitonze Solange (Data Handler)
 -- Task: Insert sample data into tables
 -- =========================================
 INSERT INTO Students VALUES (1, 'Jean', 'Claude', 'Male', 'Computer Science');
